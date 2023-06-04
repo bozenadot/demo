@@ -5,5 +5,6 @@ const en = Object.freeze({
     CreateAnAccount: 'create an account',
     Register: 'register',
     RepeatPassword: 'repeatpassword',
+    LoginInstead: 'Login instead',
 })
 export default en

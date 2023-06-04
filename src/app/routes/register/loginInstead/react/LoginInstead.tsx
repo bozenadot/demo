@@ -2,12 +2,12 @@ import React from 'react'
 import { Box, Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 import useThemedStyles from '../../../../hooks/useThemedStyles'
-import useCreateAnAccountPresenter from './useCreateAnAccountPresenter'
+import useLoginInsteadPresenter from './useLoginInsteadPresenter'
 
 const LinkButton = Button as any
 
-export default function CreateAnAcccount() {
-    const { getText, getLink } = useCreateAnAccountPresenter()
+export default function LoginInstead() {
+    const { getText, getLink } = useLoginInsteadPresenter()
     const styles = useThemedStyles(() => ({
         box: {
             margin: 'auto',

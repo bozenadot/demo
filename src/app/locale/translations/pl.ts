@@ -14,6 +14,7 @@ const pl = typeGuard(
         CreateAnAccount: 'stwórz nowe konto',
         Register: 'zarejestruj się',
         RepeatPassword: 'powtórz hasło',
+        LoginInstead: 'Powrót do logowania',
     })
 )
 

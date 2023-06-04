@@ -1,14 +1,14 @@
 import { LocaleContextModel } from '../../../../type'
 
-export default function CreateAnAccountPresenter({
+export default function LoginInsteadPresenter({
     translate,
 }: LocaleContextModel) {
     return {
         getText() {
-            return translate('CreateAnAccount')
+            return translate('LoginInstead')
         },
         getLink() {
-            return '/register'
+            return '/'
         },
     }
 }

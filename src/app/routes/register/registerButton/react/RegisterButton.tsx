@@ -1,10 +1,10 @@
 import { Box, Button } from '@mui/material'
 import React from 'react'
-import useLoginButtonPresenter from './useLoginButtonPresenter'
+import useRegisterButtonPresenter from './useRegisterButtonPresenter'
 import useThemedStyles from '../../../../hooks/useThemedStyles'
 
-export default function LoginButton() {
-    const { getText, onClick } = useLoginButtonPresenter()
+export default function RegisterButton() {
+    const { getText, onClick } = useRegisterButtonPresenter()
     const styles = useThemedStyles(() => ({
         box: {
             margin: 'auto',

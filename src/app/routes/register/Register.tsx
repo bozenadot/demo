@@ -5,6 +5,8 @@ import useThemedStyles from '../../hooks/useThemedStyles'
 import Username from './username/react/Username'
 import Password from './password/react/Password'
 import RepeatPassword from './repeatPassword/react/RepeatPassword'
+import RegisterButton from './registerButton/react/RegisterButton'
+import LoginInstead from './loginInstead/react/LoginInstead'
 
 export default function Register() {
     const styles = useThemedStyles((theme) => ({
@@ -24,6 +26,8 @@ export default function Register() {
                 <Username />
                 <Password />
                 <RepeatPassword />
+                <RegisterButton />
+                <LoginInstead />
             </Card>
         </Container>
     )

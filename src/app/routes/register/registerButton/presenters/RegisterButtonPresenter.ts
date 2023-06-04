@@ -1,6 +1,6 @@
 import { LocaleContextModel } from '../../../../type'
 
-export default function LoginButtonPresenter({
+export default function RegisterButtonPresenter({
     translate,
 }: LocaleContextModel) {
     return {
@@ -8,7 +8,7 @@ export default function LoginButtonPresenter({
             console.log('click')
         },
         getText() {
-            return translate('LogIn')
+            return translate('Register')
         },
     }
 }
