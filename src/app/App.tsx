@@ -1,10 +1,10 @@
 import React from 'react'
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { HashRouter as Router, Route, Routes } from 'react-router-dom'
-import Error404 from './routes/404/react/Error404'
-import Main from './routes/main/react/Main'
 import LocaleProvider from './locale/LocaleProvider'
 import AppThemeProvider from './theme/AppThemeProvider'
+import Login from './routes/login/Login'
+import Error404 from './routes/404/react/Error404'
+import Register from './routes/register/Register'
 
 function App() {
     return (
@@ -12,7 +12,8 @@ function App() {
             <AppThemeProvider>
                 <Router>
                     <Routes>
-                        <Route path="/" element={<Main />} />
+                        <Route path="/" element={<Login />} />
+                        <Route path="/register" element={<Register />} />
                         <Route path="*" element={<Error404 />} />
                     </Routes>
                 </Router>

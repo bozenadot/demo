@@ -6,5 +6,5 @@ export default function useThemedStyles(
 ) {
     const theme = useTheme()
 
-    return createUseStyles(styles(theme))
+    return createUseStyles(styles(theme))()
 }

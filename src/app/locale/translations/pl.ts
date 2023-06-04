@@ -1,11 +1,20 @@
-const pl = Object.freeze({
-    'Provide username and password to access password storage':
-        'Podaj nazwę użytkownika i hasło, aby uzyskać dostęp do przechowywania haseł',
-    'write username here': 'wpisz nazwę użytkownika tutaj',
-    username: 'nazwa użytkownika',
-    'write password here': 'wpisz hasło tutaj',
-    password: 'hasło',
-    'Password storage': 'Password storage',
-})
+import en from './en'
+
+function typeGuard<T extends Record<keyof typeof en, string>>(object: T) {
+    return object
+}
+
+const pl = typeGuard(
+    Object.freeze({
+        LogIn: 'Zaloguj się',
+
+        Password: 'hasło',
+        Username: 'nazwa użytkownika',
+
+        CreateAnAccount: 'stwórz nowe konto',
+        Register: 'zarejestruj się',
+        RepeatPassword: 'powtórz hasło',
+    })
+)
 
 export default pl
